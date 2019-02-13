@@ -1,0 +1,25 @@
+﻿@model MahmoudClinic.ViewModels.MissionVisionViewModel
+
+@{
+    Layout = null;
+}
+
+<div class="row" style="margin:0px; margin-top:3%">
+    <div class="col-6" style="text-align:center;margin-left: 5%;margin-bottom:1%">
+        <h3 id="effect" class="MissionVisionTitle">Mission</h3>
+        <p class="MissionVisionParagraph">
+            @Html.DisplayFor(modelItem => modelItem.Vision)
+        </p>
+    </div>
+    <div class="col-6"></div>
+</div>
+
+<div class="row" style="margin:0px">
+    <div class="col-6" style="text-align:center;margin-left: 5%;">
+        <h3 class="MissionVisionTitle">Vision</h3>
+        <p class="MissionVisionParagraph">
+            @Html.DisplayFor(modelItem => modelItem.Mission)
+        </p>
+    </div>
+    <div class="col-6"></div>
+</div>

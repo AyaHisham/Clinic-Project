@@ -1,0 +1,56 @@
+﻿@model MahmoudClinic.Models.Gallery
+
+@{
+    ViewBag.Title = "Edit Gallery";
+}
+
+<h2>Edit Gallery</h2>
+
+@using (Html.BeginForm("Edit", "Gallery", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID)
+        @Html.HiddenFor(model => model.BeforePicURL)
+        @Html.HiddenFor(model => model.AfterPicURL)
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.BeforePicURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AfterPicURL)
+                </th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <td style="width:50%">
+                    <img src="~/Images/GalleryImages/@Model.BeforePicURL" class="img-responsive" style="width:100%" />
+                    <br />
+                    <input type="file" name="ImageUploadBefore" id="ImageUploadBefore" />
+                </td>
+                <td style="width:50%">
+                    <img src="~/Images/GalleryImages/@Model.AfterPicURL" class="img-responsive" style="width:100%" />
+                    <br />
+                    <input type="file" name="ImageUploadAfter" id="ImageUploadAfter" />
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

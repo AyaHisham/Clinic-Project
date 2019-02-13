@@ -1,0 +1,36 @@
+﻿body {
+    padding:0px;
+}
+
+.HeaderHr {
+    background-color:#50e6b6; 
+    height:5px;
+}
+
+.Header {
+    background-color:#145d7e;
+    height:55px; 
+    padding-left: 10%;
+}
+
+.Logo {
+    width:170px;
+}
+
+.CopyRight {
+    background-color: #145d7e;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .CopyRight > p {
+        margin:0px;
+    }
+
+.FooterHr {
+    background-color:#50e6b6; 
+    height:5px;
+}
+

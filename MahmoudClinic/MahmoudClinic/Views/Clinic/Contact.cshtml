@@ -1,0 +1,70 @@
+﻿@model MahmoudClinic.Models.ContactUs
+
+@{ Layout = null; }
+
+<h4>Contact Us</h4>
+<hr />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Longtiude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longtiude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactUsPhone)
+        </dt>
+        
+        @foreach (var item in Model.ContactUsPhone)
+        {
+            <dd>
+                @Html.DisplayFor(modelitem => item.Phone)
+            </dd>
+        }
+        
+    </dl>
+</div>

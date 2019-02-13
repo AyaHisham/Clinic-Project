@@ -1,0 +1,253 @@
+﻿body {
+}
+
+body::-webkit-scrollbar-track
+{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	/*border-radius: 10px;*/
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	/*background-color: #145d7e;*/
+    background-image:radial-gradient(circle at top left, #145d7e,#50e6b6); 
+}
+
+.HeaderHr {
+    /*background-color:#145d7e;*/ 
+    background-image:radial-gradient(circle at top left, #145d7e,#50e6b6,#145d7e); 
+    height:5px;
+}
+
+.Header {
+    background-color:rgba(225,225,225,0.6);
+    height:55px; 
+    padding-left: 10%;
+    border-bottom: 3px solid white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:#145d7e;
+    font-size:large;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:white;
+}
+
+.MissionVision {
+    background-image: url(../Images/ClinicImages/8f62a273e1ec0c329932350cbfb14d0c.jpg);
+    background-position:bottom right;
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:500px;
+}
+
+.MissionVisionTitle {
+    font-family:Cooper;
+    color:#145d7e;
+}
+
+.MissionVisionParagraph {
+    font-size:20px;
+    font-family:'Lucida Sans';
+    color:darkslategray;
+}
+
+.Appointment {
+    border: double 4px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #145d7e,#50e6b6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Appointment legend {
+     width: auto; 
+     margin-bottom: 0px !important; 
+     margin-left:2%;
+     color:#145d7e;
+     background:rgb(253, 253, 253);
+}
+
+.form-control {
+    max-width:100% !important;
+}
+
+.WorkHours {
+    border: double 4px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #145d7e,#50e6b6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.WorkHours legend {
+     width: auto; 
+     margin-bottom: 0px !important; 
+     margin-left:2%;
+     color:#145d7e;
+     background:rgb(253, 253, 253);
+}
+
+.Portfolio {
+    padding:0px !important; 
+    margin:0px !important; 
+    padding-top:5%;
+    background-image: linear-gradient(#fdfdfd,#fdfdfd,#fdfdfd,#d2e6f1);
+}
+
+.PortfolioContent {
+    text-align:center;
+    padding-right:100px;
+}
+
+.PortfolioContent h4 {
+    font-size: 260%;
+    color: #145d7e;
+    font-family: Cooper;
+    margin-bottom:5%;
+    margin-top:5%;
+}
+
+.PortfolioContent p{
+    font-size: 140%;
+    font-family: 'Lucida Sans';
+}
+
+/*Slider*/
+.OfferImages{
+    height:150px !important;
+}
+
+.OfferCard{
+    min-height:200px; 
+    text-align:center;
+    border: double 2px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #145d7e,#50e6b6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23145d7e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important
+}
+
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23145d7e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important
+}
+
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item  {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active{
+    transition: none;
+  }
+}
+/*Slider end*/
+
+.Offers {
+    padding-top: 4%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #fdfdfd;
+    /*background-image: url('../Images/ClinicImages/iStock-615803286-e1504156743197.jpg');*/
+    padding-left: 10%;
+    padding-right: 10%;
+    /*margin-bottom:10%;*/
+}
+
+.Offers h4{
+    font-size: 260%;
+    color: #145d7e;
+    font-family: Cooper;
+    margin-bottom:3%;
+}
+
+.Gallery {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url('../Images/ClinicImages/GalleryBG2.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    /*background-image: linear-gradient(#d2e6f1,#fdfdfd,#fdfdfd,#fdfdfd);*/
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.Gallery h4{
+    font-size: 260%;
+    color: #d2e6f1;
+    font-family: Cooper;
+    margin-bottom:3%;
+    padding-top:5%;
+}
+
+.Gallery .row .col-lg-3{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.GalleryImage {
+    width:100%;
+    height:200px;
+    /*border-radius:5%;*/
+}
+
+/*Flip Image Start*/
+.flip-box {
+  background-color: transparent;
+  height: 200px;
+  /*border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+/*Flip Image End*/
+
+.RateImage{
+    height:50px;
+    padding-right:5%;
+}

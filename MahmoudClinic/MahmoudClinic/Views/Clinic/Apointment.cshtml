@@ -1,0 +1,80 @@
+﻿@model MahmoudClinic.Models.Patient
+
+@{
+    Layout = null;
+}
+
+<div class="row" style="margin-left: 5%; margin-right: 5%; padding-top: 5%;">
+    <div class="col-4">
+        <fieldset class="WorkHours">
+            <legend>Work Hours</legend>
+            <div class="row" style="color:darkslategray; text-align: center; margin-top:3%;">
+                <div class="col-6">
+                    <h5>From</h5>
+                </div>
+                <div class="col-6">
+                    <p>9 am</p>
+                </div>
+            </div>
+            <div class="row" style="color:darkslategray; text-align: center;">
+                <div class="col-6">
+                    <h5>To</h5>
+                </div>
+                <div class="col-6">
+                    <p>11 pm</p>
+                </div>
+            </div>
+            <div class="row" style="color:darkslategray; text-align: center; margin-bottom:2%;">
+                <div class="col-6">
+                    <h5>Vications</h5>
+                </div>
+                <div class="col-6">
+                    <p>Friday</p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-8">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <fieldset class="Appointment">
+                <legend>Appointment</legend>
+                <div class="row" style="margin:0px; margin-bottom:1%; padding:0px">
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name" } })
+                    </div>
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", @placeholder = "Phone" } })
+                    </div>
+                </div>
+
+                <div class="row" style="margin:0px; margin-bottom:1%; padding:0px">
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                    </div>
+                    <div class="col-4">
+                        @Html.DropDownListFor(model => model.CauseID, (SelectList)ViewBag.Causes, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="col-4">
+                        @Html.EditorFor(model => model.Time, new { htmlAttributes = new { @class = "form-control", @placeholder = "Time" } })
+                    </div>
+                </div>
+
+                <div class="row" style="margin:0px; margin-bottom:1%; padding:0px">
+                    <div class="col-4"></div>
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <input style="float:right" type="submit" value="Done" class="btn btn-success" />
+                    </div>
+                </div>
+            </fieldset>
+        }
+    </div>
+</div>
+
+
+

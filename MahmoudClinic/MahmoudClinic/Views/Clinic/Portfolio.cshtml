@@ -1,0 +1,13 @@
+﻿@model MahmoudClinic.ViewModels.PorfolioViewModel
+
+@{ Layout = null;}
+
+<div class="row Portfolio">
+    <div class="col-4" style="text-align:center">
+        <img src="~/Images/AboutImages/@Model.ID@Model.ProfilePicURL" />
+    </div>
+    <div class="col-8 PortfolioContent">
+        <h4>Dr. Mahmoud Salah</h4>
+        <p>@Html.DisplayFor(model => model.Potrifolio)</p>
+    </div>
+</div>

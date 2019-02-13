@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MahmoudClinic.Models.News>
+
+@{
+    ViewBag.Title = "News";
+}
+
+<h2>News</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideoURL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideoURL)
+        </td>
+        <td>
+            <div class="dropdown">
+                <a style="padding-left:0px" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-cog" />
+                </a>
+                <ul class="dropdown-menu multi-level" aria-labelledby="navbarDropdown" role="menu">
+                    <li>@Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                    <li>@Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                    <li class="dropdown-divider"></li>
+                    <li>@Html.ActionLink("Images", "DisplayImages", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

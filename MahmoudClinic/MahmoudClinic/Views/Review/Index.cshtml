@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MahmoudClinic.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reviews</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReviewContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReviewStars)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Approved)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReviewContent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReviewStars)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Approved)
+        </td>
+        <td>
+            <div class="dropdown">
+                <a style="padding-left:0px" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-cog" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>@Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                    <li>@Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,114 @@
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\ApplicationInsights.config
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\csc.exe
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\vbc.exe
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\MahmoudClinic.dll.config
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\MahmoudClinic.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\MahmoudClinic.pdb
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Antlr3.Runtime.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.SqlServer.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.DependencyCollector.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.Web.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.WindowsServer.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.ApplicationInsights.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Newtonsoft.Json.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Helpers.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Mvc.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Optimization.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Razor.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Razor.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\WebGrease.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.SqlServer.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.DependencyCollector.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.Web.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.WindowsServer.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.ApplicationInsights.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Helpers.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Mvc.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Optimization.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Razor.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Razor.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Antlr3.Runtime.pdb
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\bin\Newtonsoft.Json.xml
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\obj\Debug\MahmoudClinic.dll
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\obj\Debug\MahmoudClinic.pdb
+E:\Projects\Dr. Mahmoud Salah Dental Clinic\MahmoudClinic\MahmoudClinic\obj\Debug\MahmoudClinic.csprojResolveAssemblyReference.cache
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\ApplicationInsights.config
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\csc.exe
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\vbc.exe
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\VBCSCompiler.exe
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\MahmoudClinic.dll.config
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\MahmoudClinic.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\MahmoudClinic.pdb
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Antlr3.Runtime.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.SqlServer.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.Web.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Newtonsoft.Json.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Helpers.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Mvc.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Optimization.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Razor.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Razor.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\WebGrease.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\EntityFramework.SqlServer.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.Web.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Helpers.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Mvc.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Optimization.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.Razor.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\System.Web.WebPages.Razor.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Antlr3.Runtime.pdb
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\bin\Newtonsoft.Json.xml
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\obj\Debug\MahmoudClinic.csprojResolveAssemblyReference.cache
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\obj\Debug\MahmoudClinic.dll
+C:\Users\Aya\Desktop\final clinic\MahmoudClinic\MahmoudClinic\obj\Debug\MahmoudClinic.pdb

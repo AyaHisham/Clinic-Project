@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Images/Icon2.png" type="image/x-icon" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="HeaderHr"></div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark Header" style="margin-bottom:7%">
+        <div>
+            <img src="~/Images/Logo.png" class="Logo"/>
+        </div>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#Header" aria-controls="Header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="Header" style="background-color:#145d7e">
+            <ul class="navbar-nav mr-auto" style="margin-left:5%">
+                <li class="nav-item active">
+                    @Html.ActionLink("Patients", "Index", "Patient", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Offers", "Index", "Offers", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Reviews", "Index", "Review", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Gallery", "Index", "Gallery", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("News", "Index", "News", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Portifolio", "Index", "Portifolio", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Messages</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container body-content" style="min-height:408px">
+        @RenderBody()
+    </div>
+    <div class="CopyRight">
+        <p>&copy; @DateTime.Now.Year - Our Company Name</p>
+    </div>
+    <div class="FooterHr"></div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

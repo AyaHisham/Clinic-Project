@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MahmoudClinic.Models.News>
+
+@{ Layout = null; }
+
+<h4>News</h4>
+<hr />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideoURL)
+        </th>
+        <th>
+            Pictures
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideoURL)
+        </td>
+        <td>
+            @foreach (var pic in item.NewsPicture)
+            {
+                <p>@Html.DisplayFor(modelItem => pic.PicURL)</p>
+            }
+        </td>
+    </tr>
+}
+
+</table>

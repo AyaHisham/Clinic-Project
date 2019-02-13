@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MahmoudClinic.Models.Review>
+
+@{ Layout = null; }
+
+<div class="container">
+    <div class="row">
+        <div class="col-12"><h4>Reviews</h4></div>
+    </div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-4">
+                <fieldset>
+                    <legend>
+                        @if (item.ReviewStars > 0 && item.ReviewStars < 6)
+                        {
+                            var imageSource = @item.ReviewStars + ".png";
+                            <img class="RateImage" src="../Images/ClinicImages/Rate/@imageSource" />
+                        }
+                        else {<img src="../Images/ClinicImages/Rate/Rate.png" /> }
+                    </legend>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.ReviewContent)</p>
+                </fieldset>
+            </div>
+        }
+    </div>
+</div>

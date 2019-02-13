@@ -1,0 +1,39 @@
+﻿@model MahmoudClinic.Models.Offers
+
+@{
+    ViewBag.Title = "Delete Offer";
+}
+
+<h2>Delete Offer</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OfferPicURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OfferContent)
+            </th>
+        </tr>
+        <tr>
+            <td style="width:10%">
+                <img src="~/Images/OffersImages/@Model.OfferPicURL" class="img-responsive" style="width:100%" />
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.OfferContent)
+            </td>
+        </tr>
+    </table>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

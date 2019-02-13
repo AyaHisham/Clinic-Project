@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MahmoudClinic.Models.Gallery>
+
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<h2>Gallery</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BeforePicURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AfterPicURL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="width:35%">
+            <img src="~/Images/GalleryImages/@item.BeforePicURL" class="img-responsive" style="width:100%" />
+        </td>
+        <td style="width:35%">
+            <img src="~/Images/GalleryImages/@item.AfterPicURL" class="img-responsive" style="width:100%" />
+        </td>
+        <td>
+            <div class="dropdown">
+                <a style="padding-left:0px" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-cog" />
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>@Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                    <li>@Html.ActionLink("Delete", "Delete", new { id = item.ID }, new { @class = "dropdown-item" })</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

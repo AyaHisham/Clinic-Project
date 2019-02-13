@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MahmoudClinicDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="About">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vision" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mission" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Potrifolio" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProfilePicURL" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactUs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Longtiude" Type="decimal" Precision="12" Scale="9" Nullable="false" />
+    <Property Name="Latitude" Type="decimal" Precision="12" Scale="9" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="WorkStart" Type="int" Nullable="false" />
+    <Property Name="WorkEnd" Type="int" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactUsPhone">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContactUsID" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gallery">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BeforePicURL" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AfterPicURL" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VideoURL" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="NewsPicture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewsID" Type="int" Nullable="false" />
+    <Property Name="PicURL" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Offers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OfferPicURL" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OfferContent" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="CauseID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Time" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Review">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReviewContent" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ReviewStars" Type="smallint" Nullable="false" />
+    <Property Name="Approved" Type="bit" />
+  </EntityType>
+  <EntityType Name="VisitCause">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cause" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <Association Name="ContactUsPhoneFK">
+    <End Role="ContactUs" Type="Self.ContactUs" Multiplicity="1" />
+    <End Role="ContactUsPhone" Type="Self.ContactUsPhone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactUs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ContactUsPhone">
+        <PropertyRef Name="ContactUsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="NewsPictureFK">
+    <End Role="News" Type="Self.News" Multiplicity="1" />
+    <End Role="NewsPicture" Type="Self.NewsPicture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="News">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="NewsPicture">
+        <PropertyRef Name="NewsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PatientCauseFK">
+    <End Role="VisitCause" Type="Self.VisitCause" Multiplicity="1" />
+    <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VisitCause">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Patient">
+        <PropertyRef Name="CauseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MahmoudClinicDBModelStoreContainer">
+    <EntitySet Name="About" EntityType="Self.About" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactUs" EntityType="Self.ContactUs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactUsPhone" EntityType="Self.ContactUsPhone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gallery" EntityType="Self.Gallery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Message" EntityType="Self.Message" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewsPicture" EntityType="Self.NewsPicture" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Offers" EntityType="Self.Offers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patient" EntityType="Self.Patient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Review" EntityType="Self.Review" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VisitCause" EntityType="Self.VisitCause" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="ContactUsPhoneFK" Association="Self.ContactUsPhoneFK">
+      <End Role="ContactUs" EntitySet="ContactUs" />
+      <End Role="ContactUsPhone" EntitySet="ContactUsPhone" />
+    </AssociationSet>
+    <AssociationSet Name="NewsPictureFK" Association="Self.NewsPictureFK">
+      <End Role="News" EntitySet="News" />
+      <End Role="NewsPicture" EntitySet="NewsPicture" />
+    </AssociationSet>
+    <AssociationSet Name="PatientCauseFK" Association="Self.PatientCauseFK">
+      <End Role="VisitCause" EntitySet="VisitCause" />
+      <End Role="Patient" EntitySet="Patient" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

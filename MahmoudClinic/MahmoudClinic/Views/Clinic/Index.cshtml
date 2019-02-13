@@ -1,0 +1,96 @@
+﻿@{ Layout = null;}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Images/Icon2.png" type="image/x-icon" />
+    <title>Dr. Mahmoud Salah Dental Clinic</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/UserPageCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="" style="min-height:519px;">
+        <div id="Mission&Vision" class="MissionVision">
+            <div class="HeaderHr"></div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark Header">
+                <div>
+                    <img src="~/Images/Logo.png" class="Logo" />
+                </div>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#Header" aria-controls="Header" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="Header">
+                    <ul class="navbar-nav mr-auto" style="margin-left:9%">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            @{Html.RenderAction("MissionVision");}
+        </div>
+        
+        <div id="Appointment" style="background: rgba(238, 238, 238, 0.1)">
+            @{Html.RenderAction("Apointment");}
+        </div>
+        
+        <div id="Portfolio" style="padding-top: 5%;background-color:#fdfdfd">
+            @{Html.RenderAction("Portfolio");}
+        </div>
+        
+        <div id="Offers">
+            @{Html.RenderAction("Offers");}
+        </div>
+
+        <div id="Gallery">
+            @{Html.RenderAction("Gallery");}
+        </div>
+        
+        <div id="Reviews">
+            @{Html.RenderAction("Reviews");}
+        </div>
+        
+        @*<div id="News">
+            @{Html.RenderAction("News");}
+        </div>*@
+        
+        @*<div id="Contact">
+            @{Html.RenderAction("Contact");}
+        </div>*@
+    </div>
+    
+    <div class="CopyRight">
+        <p>&copy; @DateTime.Now.Year - Our Company Name</p>
+    </div>
+    <div class="FooterHr"></div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
